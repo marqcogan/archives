@@ -51,7 +51,7 @@ Consider the following snippet reflecting this scenario:
   [networkService sendRequest:request
                    completion:^(NSString *response, NSError *error) {
     // Resolve the weak reference to a strong reference.
-    __weak __typeof__(controller) strongController = weakController;
+    __typeof__(controller) strongController = weakController;
 
     // Nil-messaging ensures that the operations below will be no-ops
     // if the controller happens to have deallocated since the
